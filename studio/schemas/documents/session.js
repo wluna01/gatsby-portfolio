@@ -6,6 +6,7 @@ export default {
       {
         name: 'startedAt',
         type: 'datetime',
+        required: True,
         title: 'Start Time'
       },
       {
