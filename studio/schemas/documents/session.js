@@ -18,7 +18,7 @@ export default {
         name: 'notes',
         type: 'text',
         title: 'Notes'
-      },
+      }
     ]
   }
   
