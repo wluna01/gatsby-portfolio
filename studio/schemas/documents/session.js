@@ -6,7 +6,6 @@ export default {
       {
         name: 'startedAt',
         type: 'datetime',
-        required: True,
         title: 'Start Time'
       },
       {
@@ -18,6 +17,12 @@ export default {
         name: 'notes',
         type: 'text',
         title: 'Notes'
+      },
+      {
+        title: 'Media',
+        name: 'media',
+        type: 'reference',
+        to: [{type: 'media'}]
       }
     ]
   }

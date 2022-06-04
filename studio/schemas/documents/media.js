@@ -1,3 +1,13 @@
+//baseline query
+//*[_type == 'media'  && count(sessions[]) > 0]
+//{
+//  title,
+//  "beganAt": *[_type == 'session' && media->title == ^.title]
+//  |order(startedAt asc)[0].startedAt,
+//  "numSessions": count(*[_type == 'session' && media->title == ^.title])
+//}
+
+
 export default {
     name: 'media',
     type: 'document',
