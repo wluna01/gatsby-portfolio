@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import category from './documents/category'
 import person from './documents/person'
 import media from './documents/media'
+import creator from './documents/creator'
 import session from './documents/session'
 import sampleProject from './documents/sampleProject'
 import siteSettings from './documents/siteSettings'
@@ -40,6 +41,7 @@ export default createSchema({
     sampleProject,
     siteSettings,
     media,
-    session
+    session,
+    creator
   ])
 })
