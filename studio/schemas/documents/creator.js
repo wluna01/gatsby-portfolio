@@ -16,7 +16,9 @@ export default {
                 list: [
                   {title: 'Director', value: 'director'},
                   {title: 'Author', value: 'author'},
-                  {title: 'Studio', value: 'studio'}
+                  {title: 'Studio', value: 'studio'},
+                  {title: 'University', value: 'university'},
+                  {title: 'Network (TV, Radio)', value: 'network'}
                 ]
             }
         },

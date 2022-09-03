@@ -11,7 +11,7 @@
 export default {
   name: 'media',
   type: 'document',
-  title: 'Media',
+  title: 'Activity',
   fields: [
     {
       name: 'title',
@@ -37,7 +37,11 @@ export default {
             {title: 'Book', value: 'book'},
             {title: 'Movie', value: 'movie'},
             {title: 'Videogame', value: 'videogame'},
-            {title: 'Podcast', value: 'podcast'}
+            {title: 'Podcast', value: 'podcast'},
+            {title: 'Restaurant', value: 'restuarant'},
+            {title: 'Course', value: 'course'},
+            {title: 'TV Show', value: 'show'},
+            {title: 'Play', value: 'play'}
           ]
       }
     },
