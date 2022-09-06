@@ -41,7 +41,8 @@ export default {
             {title: 'Restaurant', value: 'restuarant'},
             {title: 'Course', value: 'course'},
             {title: 'TV Show', value: 'show'},
-            {title: 'Play', value: 'play'}
+            {title: 'Play', value: 'play'},
+            {title: 'Board Game', value: 'boardgame'}
           ]
       }
     },
