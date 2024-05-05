@@ -42,7 +42,11 @@ export default {
             {title: 'Course', value: 'course'},
             {title: 'TV Show', value: 'show'},
             {title: 'Play', value: 'play'},
-            {title: 'Board Game', value: 'boardgame'}
+            {title: 'Board Game', value: 'boardgame'},
+            {title: 'Museum', value: 'museum'},
+            {title: 'Concert', value: 'concert'},
+            {title: 'Bar/Cafe', value: 'bar'},
+            {title: 'Event', value: 'event'}
           ]
       }
     },
