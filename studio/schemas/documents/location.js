@@ -6,13 +6,19 @@ export default {
         {
             name: 'place',
             type: 'string',
-            title: 'Place'
+            title: 'Location Name'
         },
         {
-            name: 'city',
+            name: 'type',
             type: 'string',
-            title: 'City',
-            initialValue: 'San Francisco'
+            title: 'Type',
+            options: {
+                list: [
+                  {title: 'Neighborhood', value: 'neighborhood'},
+                  {title: 'Theater', value: 'theater'},
+                  {title: 'City', value: 'city'}
+                ]
+            }
         }
     ]
 }

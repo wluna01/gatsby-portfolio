@@ -20,7 +20,9 @@ export default {
                   {title: 'University', value: 'university'},
                   {title: 'Network (TV, Radio)', value: 'network'},
                   {title: 'Artist', value: 'artist'},
-                  {title: 'Speaker', value: 'speaker'}
+                  {title: 'Speaker', value: 'speaker'},
+                  {title: 'Designer', value: 'designer'},
+                  {title: 'Other', value: 'other'},
                 ]
             }
         },

@@ -31,21 +31,29 @@ export default {
       to: [{type: 'media'}]
     },
     {
-      title: 'City',
-      name: 'city',
-      type: 'string',
-      initialValue: 'San Francisco'
+      title: 'Location Unclear from Activity and not Home',
+      name: 'needs_location',
+      type: 'boolean',
+      initialValue: false
     },
     {
-      title: 'Photos',
-      name: 'photos',
-      type: 'array',
-      of: [{type: 'image'}]
+      name: 'location',
+      type: 'reference',
+      title: 'Location',
+      to: [{type: 'location'}, {type: 'media'}],
+      hidden: ({document}) => ![true].includes(document?.needs_location)
+    },
+    {
+      title: 'Has People',
+      name: 'has_people',
+      type: 'boolean',
+      initialValue: false
     },
     {
       title: 'People',
       name: 'people',
       type: 'array',
+      hidden: ({document}) => ![true].includes(document?.has_people),
       of: [
         {
           type: 'reference',
@@ -54,6 +62,19 @@ export default {
           ]
         }
       ]
+    },
+    {
+      title: 'Has Photos',
+      name: 'has_photos',
+      type: 'boolean',
+      initialValue: false
+    },
+    {
+      title: 'Photos',
+      name: 'photos',
+      type: 'array',
+      of: [{type: 'image'}],
+      hidden: ({document}) => ![true].includes(document?.has_photos)
     }
   ]
 }

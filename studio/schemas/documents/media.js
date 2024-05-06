@@ -26,7 +26,8 @@ export default {
     {
       name: 'cover',
       type: 'image',
-      title: 'Cover'
+      title: 'Cover',
+      hidden: ({document}) => !['book', 'movie', 'show', 'videogame', 'podcast', 'course'].includes(document?.type)
     },
     {
       name: 'type',
@@ -38,34 +39,40 @@ export default {
             {title: 'Movie', value: 'movie'},
             {title: 'Videogame', value: 'videogame'},
             {title: 'Podcast', value: 'podcast'},
-            {title: 'Restaurant', value: 'restuarant'},
             {title: 'Course', value: 'course'},
             {title: 'TV Show', value: 'show'},
+            {title: 'Video Series', value: 'video'},
             {title: 'Play', value: 'play'},
+            {title: 'Restaurant', value: 'restaurant'},
             {title: 'Board Game', value: 'boardgame'},
             {title: 'Museum', value: 'museum'},
             {title: 'Concert', value: 'concert'},
             {title: 'Bar/Cafe', value: 'bar'},
-            {title: 'Event', value: 'event'}
+            {title: 'Store', value: 'store'},
+            {title: 'Event', value: 'event'},
+            {title: 'Gym', value: 'gym'}
           ]
       }
     },
     {
       name: 'release_date',
       type: 'date',
-      title: 'Release Date'
+      title: 'Release Date',
+      hidden: ({document}) => !['book', 'movie', 'show', 'videogame'].includes(document?.type)
     },
     {
       name: 'creator',
       type: 'reference',
       title: 'Creator',
-      to: [{type: 'creator'}]
+      to: [{type: 'creator'}],
+      hidden: ({document}) => !['book', 'movie', 'videogame', 'show', 'course'].includes(document?.type)
     },
     {
       name: 'location',
       type: 'reference',
       title: 'Location',
-      to: [{type: 'location'}]
+      to: [{type: 'location'}],
+      hidden: ({document}) => !['gym', 'event', 'concert', 'restaurant', 'bar', 'museum', 'store'].includes(document?.type)
     }
   ]
 }
