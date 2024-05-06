@@ -11,7 +11,8 @@ export default {
     {
       name: 'startedAt',
       type: 'datetime',
-      title: 'Start Time'
+      title: 'End Time',
+      initialValue: (new Date()).toISOString()
     },
     {
       name: 'minutes',
@@ -32,7 +33,7 @@ export default {
     {
       title: 'City',
       name: 'city',
-      type: 'text',
+      type: 'string',
       initialValue: 'San Francisco'
     },
     {
@@ -40,6 +41,19 @@ export default {
       name: 'photos',
       type: 'array',
       of: [{type: 'image'}]
+    },
+    {
+      title: 'People',
+      name: 'people',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [
+            {type: 'person'}
+          ]
+        }
+      ]
     }
   ]
 }

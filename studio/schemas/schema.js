@@ -10,6 +10,7 @@ import person from './documents/person'
 import media from './documents/media'
 import creator from './documents/creator'
 import session from './documents/session'
+import location from './documents/location'
 import sampleProject from './documents/sampleProject'
 import siteSettings from './documents/siteSettings'
 
@@ -42,6 +43,7 @@ export default createSchema({
     siteSettings,
     media,
     session,
+    location,
     creator
   ])
 })

@@ -60,6 +60,12 @@ export default {
       type: 'reference',
       title: 'Creator',
       to: [{type: 'creator'}]
+    },
+    {
+      name: 'location',
+      type: 'reference',
+      title: 'Location',
+      to: [{type: 'location'}]
     }
   ]
 }
