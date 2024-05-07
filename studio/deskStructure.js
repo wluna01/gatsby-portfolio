@@ -5,6 +5,7 @@ const hiddenDocTypes = listItem =>
   ![
     'category',
     'sampleProject',
+    'location',
     'siteSettings'].includes(listItem.getId())
 
 export default () =>
